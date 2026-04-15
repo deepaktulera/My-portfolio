@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak | Portfolio</title>
+
+    <link rel="stylesheet" href="src/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-linear-to-r from-pink-200 to-blue-200 min-h-screen text-black">
+
+    <header class="fixed top-0 w-full z-50 p-4">
+        <nav
+            class="max-w-5xl mx-auto glass-card px-6 py-3 flex justify-between items-center shadow-sm rounded-full bg-white/20 backdrop-blur-md dark:bg-black/20 dark:border-white/20">
+            <div class="font-bold text-xl uppercase tracking-tighter dark:text-white">
+                <img src="profile/logo.png" class="w-10 grayscale" alt="logo">
+            </div>
+            <ul class="hidden md:flex gap-6 font-semibold text-sm uppercase tracking-wider dark:text-white">
+                <li><a href="#home" class="hover:opacity-60">Home</a></li>
+                <li><a href="#about" class="hover:opacity-60">About</a></li>
+                <li><a href="#skills" class="hover:opacity-60">Skills</a></li>
+                <li><a href="#projects" class="hover:opacity-60">Projects</a></li>
+                <li><a href="#contact" class="hover:opacity-60">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"
+                class="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center text-white dark:text-black cursor-pointer transition-all duration-300">
+                <i id="theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center pt-24 pb-12 space-y-20">
+
+        <section id="home" class="glass-card w-[85vw] min-h-[75vh] flex items-center justify-center shadow-2xl p-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 w-full max-w-5xl">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/profile/profile.jpg" alt="profile"
+                        class="w-80 h-96 object-cover rounded-3xl shadow-lg border-4 border-white">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left space-y-6">
+                    <h1 class="text-5xl font-extrabold tracking-tight">Hello Deepak!</h1>
+                    <p class="text-xl font-light">Full Stack Web Developer & Designer.</p>
+                    <div class="flex gap-5 justify-center md:justify-start text-2xl">
+                        <i class="fa-brands fa-linkedin hover:scale-110 transition cursor-pointer"></i>
+                        <i class="fa-brands fa-github hover:scale-110 transition cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram hover:scale-110 transition cursor-pointer"></i>
+                    </div>
+                    <button
+                        class="px-8 py-3 border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-all uppercase text-xs tracking-widest">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="glass-card w-[85vw] min-h-[75vh] flex items-center justify-center shadow-2xl p-10">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12 w-full max-w-5xl">
+                <div class="md:w-1/2 text-center md:text-left space-y-6">
+                    <h2 class="text-4xl font-bold">About Me!</h2>
+                    <p class="text-lg leading-relaxed font-light">
+                        I am a passionate developer currently mastering the MERN stack. I bring a precise, "zero-error"
+                        mentality to every project I build.
+                    </p>
+                    <button
+                        class="px-8 py-3 bg-black text-white rounded-full border-2 border-black hover:bg-transparent hover:text-black transition-all uppercase text-xs tracking-widest">
+                        Read More
+                    </button>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/profile/profile.jpg" alt="profile"
+                        class="w-80 h-96 object-cover rounded-3xl shadow-lg border-4 border-white">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills"
+            class="glass-card w-[85vw] min-h-[75vh] flex flex-col items-center justify-center bg-white/20 backdrop-blur-xl rounded-[2.5rem] border border-white/40 shadow-2xl p-10 scroll-mt-28">
+            <h2 class="text-4xl font-bold mb-16 uppercase tracking-widest">Technical Skills</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-5xl">
+
+                <div class="flex flex-col items-center group">
+                    <div class="animate-progress relative w-32 h-32 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
+                        style="--p: 90;">
+
+                        <div
+                            class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center shadow-inner peer-checked:bg-slate-800">
+                            <span class="text-2xl font-bold">90%</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold uppercase tracking-tighter">HTML</h3>
+                    <p class="text-[10px] opacity-60 text-center px-4">Structuring clean, SEO-friendly code.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="animate-progress relative w-32 h-32 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
+                        style="--p: 85;">
+                        <div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center shadow-inner">
+                            <span class="text-2xl font-bold">85%</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold uppercase tracking-tighter">CSS</h3>
+                    <p class="text-[10px] opacity-60 text-center px-4">Advanced styling and responsiveness.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="animate-progress relative w-32 h-32 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
+                        style="--p: 75;">
+                        <div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center shadow-inner">
+                            <span class="text-2xl font-bold">75%</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold uppercase tracking-tighter">JavaScript</h3>
+                    <p class="text-[10px] opacity-60 text-center px-4">Complex logic and dynamic interactions.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="animate-progress relative w-32 h-32 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
+                        style="--p: 80;">
+                        <div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center shadow-inner">
+                            <span class="text-2xl font-bold">80%</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold uppercase tracking-tighter">Tailwind</h3>
+                    <p class="text-[10px] opacity-60 text-center px-4">Modern utility-first styling.</p>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="animate-progress relative w-32 h-32 rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
+                        style="--p: 70;">
+                        <div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center shadow-inner">
+                            <span class="text-2xl font-bold">70%</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold uppercase tracking-tighter">React</h3>
+                    <p class="text-[10px] opacity-60 text-center px-4">Building component-based interfaces.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects"
+            class="glass-card w-[85vw] min-h-[75vh] flex flex-col items-center shadow-2xl p-10 scroll-auto">
+            <h2 class="text-4xl font-bold mb-12 uppercase tracking-widest">Projects</h2>
+
+            <div class="flex flex-col md:flex-row gap-8 w-full max-w-5xl overflow-y-auto no-scrollbar  md:overflow-x-auto pb-10">
+
+                <div
+                    class="group relative min-w-full md:min-w-[300px] h-80 rounded-[2rem] overflow-hidden shadow-xl bg-white">
+                    <img src="project/portfolio.png" class="w-full h-full object-contain">
+
+                    <div
+                        class="absolute inset-0 bg-black flex flex-col justify-center items-center p-8 text-center text-white 
+                                translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4">Portfolio Pro</h3>
+                        <p class="text-white/80 text-sm">A high-performance personal portfolio built with React and
+                            Tailwind CSS.</p>
+                        <a href="#"
+                            class="mt-6 border border-white px-6 py-2 rounded-full uppercase text-[10px] tracking-widest hover:bg-white hover:text-black transition">View
+                            Demo</a>
+                    </div>
+                </div>
+                <div
+                    class="group relative min-w-full md:min-w-[300px] h-80 rounded-[2rem] overflow-hidden shadow-xl bg-white">
+                    <img src="project/portfolio.png" class="w-full h-full object-cover">
+
+                    <div
+                        class="absolute inset-0 bg-black flex flex-col justify-center items-center p-8 text-center text-white 
+                                translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4">Weather - App </h3>
+                        <p class="text-white/80 text-sm">A high-performance personal portfolio built with React and
+                            Tailwind CSS.</p>
+                        <a href="https://intrectiveweather.netlify.app/" target="_blank"
+                            class="mt-6 border border-white px-6 py-2 rounded-full uppercase text-[10px] tracking-widest hover:bg-white hover:text-black transition">View
+                            Demo</a>
+                    </div>
+                </div>
+                <div
+                    class="group relative min-w-full md:min-w-[300px] h-80 rounded-[2rem] overflow-hidden shadow-xl bg-white">
+                    <img src="project/portfolio.png" class="w-full h-full object-cover">
+
+                    <div
+                        class="absolute inset-0 bg-black flex flex-col justify-center items-center p-8 text-center text-white 
+                                translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4">Portfolio Pro</h3>
+                        <p class="text-white/80 text-sm">A high-performance personal portfolio built with React and
+                            Tailwind CSS.</p>
+                        <a href="#"
+                            class="mt-6 border border-white px-6 py-2 rounded-full uppercase text-[10px] tracking-widest hover:bg-white hover:text-black transition">View
+                            Demo</a>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative min-w-full md:min-w-[300px] h-80 rounded-[2rem] overflow-hidden shadow-xl bg-white">
+                    <img src="project/portfolio.png" class="w-full h-full object-cover">
+
+                    <div
+                        class="absolute inset-0 bg-black flex flex-col justify-center items-center p-8 text-center text-white 
+                                translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                        <h3 class="text-2xl font-bold mb-4">E-Commerce App</h3>
+                        <p class="text-white/80 text-sm">Full-stack MERN application focusing on user experience.</p>
+                        <a href="#"
+                            class="mt-6 border border-white px-6 py-2 rounded-full uppercase text-[10px] tracking-widest hover:bg-white hover:text-black transition">View
+                            Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact"
+            class="glass-card w-[85vw] min-h-[75vh] flex flex-col items-center justify-center shadow-2xl p-10">
+            <h2 class="text-4xl font-bold mb-10 uppercase tracking-widest">Get In Touch</h2>
+            <form class="w-full max-w-lg space-y-6">
+                <input type="text" placeholder="NAME"
+                    class="w-full bg-transparent border-b-2 border-black/30 p-3 outline-none focus:border-black transition">
+                <input type="email" placeholder="EMAIL"
+                    class="w-full bg-transparent border-b-2 border-black/30 p-3 outline-none focus:border-black transition">
+                <textarea placeholder="MESSAGE"
+                    class="w-full bg-transparent border-b-2 border-black/30 p-3 outline-none h-24 resize-none focus:border-black transition"></textarea>
+                <button
+                    class="w-full bg-black text-white py-4 rounded-xl font-bold hover:tracking-widest transition-all">SEND
+                    MESSAGE</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="w-full py-10 bg-white/10 backdrop-blur-md border-t border-white/20 text-center">
+        <p class="font-bold">Deepak © 2026</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

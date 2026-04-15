@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+body { font-family: 'Lora', serif; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 2.5rem;
+        }
+
+        /* Skill Bar Animation */
+        @keyframes load {
+            from { width: 0; }
+        }
+        .animate-load {
+            animation: load 2s ease-out forwards;
+        }
+
+        @property --p {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@keyframes p-load {
+  from { --p: 0; }
+}
+
+.animate-progress {
+  /* This uses the --p variable to draw the circle */
+  background: conic-gradient(black calc(var(--p) * 3.6deg), rgba(0,0,0,0.1) 0deg);
+  animation: p-load 2s ease-out forwards;
+}
+
+/* ================= DARK MODE ================= */
+
+.dark-mode {
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+.dark-mode nav {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Glass cards */
+.dark-mode .glass-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: white;
+}
+
+/* Text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: white;
+}
+
+/* Buttons */
+.dark-mode button {
+    border-color: white;
+}
